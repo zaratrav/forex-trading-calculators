@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pip Value Calculator</title>
+<meta name="google-site-verification" content="PkLa_ViOo6FAHpvh8SacceMb95o9tePRdrqLNBz9X1M" />
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Pip Value Calculator</h1>
+
+<input id="a" placeholder="Value A">
+<input id="b" placeholder="Value B">
+
+<button onclick="calc()">Calculate</button>
+<p id="res"></p>
+
+<a href="../index.html">← Back</a>
+
+<script>
+function calc(){let lot=+a.value||0;let pip=+b.value||0.0001;res.innerText='$'+(lot*pip*100000).toFixed(2);} 
+</script>
+
+</body>
+</html>

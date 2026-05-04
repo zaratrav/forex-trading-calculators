@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profit Loss Calculator</title>
+<meta name="google-site-verification" content="PkLa_ViOo6FAHpvh8SacceMb95o9tePRdrqLNBz9X1M" />
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Profit Loss Calculator</h1>
+
+<input id="a" placeholder="Value A">
+<input id="b" placeholder="Value B">
+
+<button onclick="calc()">Calculate</button>
+<p id="res"></p>
+
+<a href="../index.html">← Back</a>
+
+<script>
+function calc(){let entry=+a.value||0;let exit=+b.value||0;res.innerText='$'+(exit-entry).toFixed(2);} 
+</script>
+
+</body>
+</html>
